@@ -35,13 +35,15 @@ set pumheight=8
 set number
 set numberwidth=3
 
-
 " case insensitive search if all lowercase
 set ignorecase smartcase
 
 " turn off bells, change to screen flash
 set visualbell
 
+" highlight extra spaces at then end of line
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 " Syntaxic checks
 set statusline+=%#warningmsg#
