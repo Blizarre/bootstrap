@@ -7,6 +7,8 @@ set hlsearch
 
 set nocompatible
 
+filetype plugin indent on
+
 set ruler
 set rulerformat=%=%h%m%r%w\ %(%c%V%),%l/%L\ %P
 

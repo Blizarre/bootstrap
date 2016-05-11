@@ -20,3 +20,5 @@ git clone $GIT_REPO $BOOTSTRAP_DIR
 ln -s $BOOTSTRAP_DIR/vimrc ~/.vimrc 
 ln -s $BOOTSTRAP_DIR/tmux.config ~/.tmux.conf
 
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
