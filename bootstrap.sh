@@ -13,12 +13,14 @@ fi
 
 $SUDO apt-get -y update
 $SUDO apt-get -y upgrade
-$SUDO apt-get -y install curl vim git tmux
+$SUDO apt-get -y install shellcheck curl vim git tmux
 
 mkdir -p $BOOTSTRAP_DIR
 git clone $GIT_REPO $BOOTSTRAP_DIR
 ln -s $BOOTSTRAP_DIR/vimrc ~/.vimrc 
 ln -s $BOOTSTRAP_DIR/tmux.config ~/.tmux.conf
 
+# Vim plugins and syntax checker
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+git clone https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
