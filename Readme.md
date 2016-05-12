@@ -1,6 +1,8 @@
-# Install default environment
+This repo store a small script and a few configuration files for new aws instance / docker container / pc from scratch. Just copy / paste the command-line below in your terminal, and it will download python, vim, tmux and htop, as well as a few plugins to quickly detect errors on bash / python scripts.
 
-NOTE: mainly for ubuntu systems
+It is designed and tested for an ubuntu-like system.
+
+# Install default environment
 
 Copy-paste this in a terminal:
 
