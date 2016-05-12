@@ -13,7 +13,7 @@ fi
 
 $SUDO apt-get -y update
 $SUDO apt-get -y upgrade
-$SUDO apt-get -y install python2.7 shellcheck curl vim git tmux
+$SUDO apt-get -y install python2.7 shellcheck curl vim git tmux htop
 
 mkdir -p $BOOTSTRAP_DIR
 git clone $GIT_REPO $BOOTSTRAP_DIR
