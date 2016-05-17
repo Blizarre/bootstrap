@@ -17,8 +17,13 @@ $SUDO apt-get -y install python2.7 shellcheck curl vim git tmux htop
 
 mkdir -p $BOOTSTRAP_DIR
 git clone $GIT_REPO $BOOTSTRAP_DIR
+
+# Configuration files
 ln -s $BOOTSTRAP_DIR/vimrc ~/.vimrc
 ln -s $BOOTSTRAP_DIR/tmux.config ~/.tmux.conf
+
+mkdir -p ~/.config
+ln -s $BOOTSTRAP_DIR/flake8 ~/.config/flake8
 
 # Python pip and syntax checker
 curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py
