@@ -1,6 +1,7 @@
 call pathogen#infect()
 
 set background=light
+colorscheme desert
 syntax enable
 
 set hlsearch
@@ -57,3 +58,6 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_sh_checkers = ['shellcheck']
 
+" sudo-write
+" http://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work
+cmap w!! w !sudo tee > /dev/null %
