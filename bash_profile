@@ -1,4 +1,5 @@
 alias ll="ls -al"
+alias f="find . -iname"
 alias gap="git add --patch"
 alias ga="git add"
 alias gs="git status"
