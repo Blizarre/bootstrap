@@ -2,7 +2,7 @@ alias ll="ls -al"
 alias f="find . -iname"
 alias gap="git add --patch"
 alias ga="git add"
-alias gs="git status"
+alias gs="git rev-parse --abbrev-ref HEAD && git status --short"
 alias gcm="git commit -m "
 
 export PS1="[\$?] \h:\w \$ "
