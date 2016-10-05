@@ -5,7 +5,7 @@ alias ga="git add"
 alias gs="git rev-parse --abbrev-ref HEAD && git status --short"
 alias gcm="git commit -m "
 
-export PS1="[\$?] \h:\w \$ "
+export PS1="[\$?] \h▹ \w \$ "
 
 mcd() {
     mkdir -p $1
