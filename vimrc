@@ -14,8 +14,8 @@ set ruler
 set rulerformat=%=%h%m%r%w\ %(%c%V%),%l/%L\ %P
 
 set expandtab
-set tabstop=4 
-set shiftwidth=4 
+set tabstop=4
+set shiftwidth=4
 
 " a - terse messages (like [+] instead of [Modified]
 " t - truncate file names
@@ -64,3 +64,14 @@ cmap w!! w !sudo tee > /dev/null %
 
 let mapleader = ","
 map <leader>b :b#<CR>
+map <leader>q :q<CR>
+map <leader>w :w<CR>
+
+" In insertion mode, highlight the current line
+highlight CursorLine cterm=reverse gui=reverse
+autocmd InsertEnter * set cursorline
+autocmd InsertLeave * set nocursorline
+
+" CTRL-C Quit insert mode ... Does not trigger the |InsertLeave| autocommand event.
+" Never needed this functionnality, i disable it to get the "default"  ESC
+map <C-C> <ESC>
