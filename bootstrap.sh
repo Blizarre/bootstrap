@@ -24,6 +24,7 @@ git clone $GIT_REPO $BOOTSTRAP_DIR
 
 # Configuration files
 ln -s $BOOTSTRAP_DIR/vimrc ~/.vimrc
+ln -s $BOOTSTRAP_DIR/vim ~/.vim
 ln -s $BOOTSTRAP_DIR/tmux.config ~/.tmux.conf
 
 mkdir -p ~/.config
