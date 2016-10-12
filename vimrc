@@ -66,6 +66,7 @@ let mapleader = ","
 map <leader>b :b#<CR>
 map <leader>q :q<CR>
 map <leader>w :w<CR>
+map <leader>x :w<CR>
 
 " In insertion mode, highlight the current line
 highlight CursorLine cterm=reverse gui=reverse
