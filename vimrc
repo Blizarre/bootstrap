@@ -75,4 +75,4 @@ autocmd InsertLeave * set nocursorline
 
 " CTRL-C Quit insert mode ... Does not trigger the |InsertLeave| autocommand event.
 " Never needed this functionnality, i disable it to get the "default"  ESC
-map <C-C> <ESC>
+imap <C-C> <ESC>
