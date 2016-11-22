@@ -30,6 +30,7 @@ ln -s $BOOTSTRAP_DIR/tmux.conf ~/.tmux.conf
 mkdir -p ~/.config
 ln -s $BOOTSTRAP_DIR/flake8 ~/.config/flake8
 echo "source $BOOTSTRAP_DIR/bash_profile" >> ~/.bash_profile
+git config --global interactive.singleKey yes
 
 # Python pip and syntax checker
 curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py
