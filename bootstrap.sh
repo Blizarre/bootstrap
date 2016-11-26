@@ -8,12 +8,13 @@ GIT_REPO=https://github.com/Blizarre/bootstrap.git
 # Do not use sudo if the script is run as root, as sudo might not be available
 SUDO=""
 if [ "$(id -u)" -ne 0 ]; then
-    SUDO=sudo
+    SUDO=sudo -H
 fi
 
 $SUDO apt-get -y update
 $SUDO apt-get -y upgrade
 $SUDO apt-get -y install python2.7 curl vim git tmux htop
+$SUDO apt-get -y autoremove
 
 if dpkg -s shellcheck; then
     $SUDO apt-get -y install shellcheck
