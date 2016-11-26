@@ -8,7 +8,7 @@ GIT_REPO=https://github.com/Blizarre/bootstrap.git
 # Do not use sudo if the script is run as root, as sudo might not be available
 SUDO=""
 if [ "$(id -u)" -ne 0 ]; then
-    SUDO=sudo -H
+    SUDO="sudo -H"
 fi
 
 $SUDO apt-get -y update
