@@ -11,6 +11,8 @@ if [ "$(id -u)" -ne 0 ]; then
     SUDO="sudo -H"
 fi
 
+mkdir -p ~/bin
+
 $SUDO apt-get -y update
 $SUDO apt-get -y upgrade
 $SUDO apt-get -y install python2.7 curl vim git tmux htop
