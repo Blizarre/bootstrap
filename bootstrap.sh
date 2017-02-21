@@ -8,12 +8,15 @@ GIT_REPO=https://github.com/Blizarre/bootstrap.git
 # Do not use sudo if the script is run as root, as sudo might not be available
 SUDO=""
 if [ "$(id -u)" -ne 0 ]; then
-    SUDO=sudo
+    SUDO="sudo -H"
 fi
+
+mkdir -p ~/bin
 
 $SUDO apt-get -y update
 $SUDO apt-get -y upgrade
 $SUDO apt-get -y install python2.7 curl vim git tmux htop
+$SUDO apt-get -y autoremove
 
 if dpkg -s shellcheck; then
     $SUDO apt-get -y install shellcheck
@@ -29,7 +32,7 @@ ln -s $BOOTSTRAP_DIR/tmux.conf ~/.tmux.conf
 
 mkdir -p ~/.config
 ln -s $BOOTSTRAP_DIR/flake8 ~/.config/flake8
-echo "source $BOOTSTRAP_DIR/bash_profile" >> ~/.bash_profile
+echo "source $BOOTSTRAP_DIR/bash_rc" >> ~/.bashrc
 git config --global interactive.singleKey yes
 
 # Python pip and syntax checker

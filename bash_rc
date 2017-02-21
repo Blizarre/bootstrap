@@ -7,6 +7,8 @@ alias gcm="git commit -m "
 
 alias validate_python="python -c \"import sys; __import__('compiler').parse(open(sys.argv[1]).read())\""
 
+export PATH="$PATH:~/bin"
+
 export PS1="[\$?] \h▹ \w \$ "
 
 mcd() {
