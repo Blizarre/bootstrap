@@ -45,3 +45,4 @@ $SUDO pip2.7 install flake8
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
+git clone git://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround
