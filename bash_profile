@@ -5,6 +5,8 @@ alias ga="git add"
 alias gs="git rev-parse --abbrev-ref HEAD && git status --short"
 alias gcm="git commit -m "
 
+alias validate_python="python -c \"import sys; __import__('compiler').parse(open(sys.argv[1]).read())\""
+
 export PS1="[\$?] \h▹ \w \$ "
 
 mcd() {
