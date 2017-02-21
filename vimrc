@@ -76,3 +76,18 @@ autocmd InsertLeave * set nocursorline
 " CTRL-C Quit insert mode ... Does not trigger the |InsertLeave| autocommand event.
 " Never needed this functionnality, i disable it to get the "default"  ESC
 imap <C-C> <ESC>
+
+
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+
+set wildchar=<Tab> wildmenu wildmode=full
+
+

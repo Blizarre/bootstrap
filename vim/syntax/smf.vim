@@ -8,6 +8,7 @@ if exists("b:current_syntax")
   finish
 endif
 
+syn match url "\(http\|ftp\|https\):\/\/\S\+"
 syn match title "^=\+\n.\+$"
 syn match comment "^> .\+$"
 syn match TODO "TODO.\+$"
@@ -19,9 +20,10 @@ syn match important "\*\*.\+\*\*"
 
 highlight smfDone ctermfg=Green guifg=Green
 
-hi def link title                   Comment
-hi def link TODO              Statement
-hi def link DONE              smfDone
-hi def link FIXME              Error
+hi def link url              Identifier
+hi def link title            Comment
+hi def link TODO             Statement
+hi def link DONE             smfDone
+hi def link FIXME            Error
 hi def link important        Underlined
 hi def link comment          PreProc
