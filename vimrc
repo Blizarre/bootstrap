@@ -88,6 +88,12 @@ inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 
+" end of line and beginning of line, like othe editors
+inoremap <C-e> <Esc>A
+inoremap <C-a> <Esc>I
+
+" show pretty menu for autocomplete in the command line
 set wildchar=<Tab> wildmenu wildmode=full
 
-
+" always show 5 lines above and below the cursor (gives more context)
+set scrolloff=10
