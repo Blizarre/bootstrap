@@ -3,7 +3,7 @@ alias f="find . -iname"
 alias gap="git add --patch"
 alias ga="git add"
 alias gs="git rev-parse --abbrev-ref HEAD && git status --short"
-alias gcm="git commit -m "
+alias gc="git commit -v "
 
 alias validate_python="python -c \"import sys; __import__('compiler').parse(open(sys.argv[1]).read())\""
 
