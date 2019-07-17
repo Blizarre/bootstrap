@@ -1,6 +1,8 @@
 call pathogen#infect()
 
-set background=light
+set mouse=
+
+set background=dark
 colorscheme desert
 syntax enable
 
