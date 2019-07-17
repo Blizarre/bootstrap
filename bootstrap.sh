@@ -15,7 +15,7 @@ mkdir -p ~/bin
 
 $SUDO apt-get -y update
 $SUDO apt-get -y upgrade
-$SUDO apt-get -y install python2.7 curl vim git tmux htop
+$SUDO apt-get -y install python3 python3-pip curl vim git tmux htop
 $SUDO apt-get -y autoremove
 
 if dpkg -s shellcheck; then
@@ -36,10 +36,7 @@ echo "source $BOOTSTRAP_DIR/bash_rc" >> ~/.bashrc
 git config --global interactive.singleKey yes
 
 # Python pip and syntax checker
-curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py
-$SUDO python2.7 get-pip.py
-rm get-pip.py
-$SUDO pip2.7 install flake8
+$SUDO pip3 install flake8
 
 # Vim plugins + syntax checker
 mkdir -p ~/.vim/autoload ~/.vim/bundle
